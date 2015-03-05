@@ -2,8 +2,6 @@ package main;
 
 public class Boggle {
 
-    public int M;
-    public int N;
     public Dictionary dic;
 
     Boggle(Dictionary dic) {
@@ -16,6 +14,10 @@ public class Boggle {
 
     void findWordsUtil(char boggle[][], boolean visited[][], int i,
                        int j, StringBuilder str) {
+        int M = boggle.length;
+        int N = boggle[0].length;
+
+
         visited[i][j] = true;
         str = str.append(boggle[i][j]);
 
@@ -24,7 +26,7 @@ public class Boggle {
 
         for (int row = i - 1; row <= i + 1 && row < M; row++)
             for (int col = j - 1; col <= j + 1 && col < N; col++)
-                if (row >= 0 && col >= 0 && !visited[row][col])
+                if (row >= 0 && col >= 0 && !visited[row][col] && dic.trie.hasPath(str.toString()))
                     findWordsUtil(boggle, visited, row, col, str);
 
         str.deleteCharAt(str.length() - 1);
@@ -32,8 +34,8 @@ public class Boggle {
     }
 
     public void findWords(char[][] boggle) {
-        this.M = boggle.length;
-        this.N = boggle[0].length;
+        int M = boggle.length;
+        int N = boggle[0].length;
         boolean visited[][] = new boolean[M][N];
 
         StringBuilder str = new StringBuilder();

@@ -29,8 +29,21 @@ public class Trie {
             }
             v = next;
         }
-        return v.leaf == true;
+        return v.leaf;
     }
+
+    public boolean hasPath(String s) {
+        TrieNode v = root;
+        for (char ch : s.toCharArray()) {
+            TrieNode next = v.children[ch];
+            if (next == null) {
+                return false;
+            }
+            v = next;
+        }
+        return v != null;
+    }
+
 
     public void printSorted(TrieNode node, String s) {
         for (char ch = 0; ch < node.children.length; ch++) {
