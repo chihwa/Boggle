@@ -1,16 +1,16 @@
 package main;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class Dictionary {
-    public static final String DICTIONARY = "/en_US.dic";
+    public static final String DICTIONARY = ".\\src\\main\\resources\\en_US.dic";
     public Trie trie = new Trie();
 
     public void buildDic() throws IOException {
-        FileReader fr = new FileReader(getClass().getResource(DICTIONARY).getPath());
-        BufferedReader br = new BufferedReader(fr);
+       BufferedReader br = new BufferedReader(new FileReader(DICTIONARY));
 
         String s;
         int wordNum = Integer.valueOf(br.readLine());
@@ -19,7 +19,6 @@ public class Dictionary {
             String word = s.split("/")[0];
             trie.insertString(word.toUpperCase());
         }
-        fr.close();
     }
 
 

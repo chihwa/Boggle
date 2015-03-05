@@ -10,10 +10,10 @@ public class Main {
         Dictionary dict = new Dictionary();
         dict.buildDic();
 
-        char boggle[][] = {{'M', 'W', 'E', 'N'},
-                {'Q', 'X', 'L', 'E'},
-                {'U', 'B', 'X', 'F'},
-                {'F', 'I', 'Y', 'K'}};
+        char boggle[][] = {{'U', 'P', 'I', 'L'},
+                {'J', 'J', 'A', 'I'},
+                {'M', 'M', 'F', 'L'},
+                {'F', 'N', 'L', 'B'}};
 
         System.out.println("Following words of dictionary are present");
         new Boggle(dict).findWords(boggle);
