@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Following words of dictionary are present");
         new Boggle(dict).findWords(boggle);
 
-        System.out.println(System.currentTimeMillis()-start);
+        System.out.println(System.currentTimeMillis() - start);
 
     }
 }

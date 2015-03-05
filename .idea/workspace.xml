@@ -39,8 +39,8 @@
       <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15863141" vertical-offset="0" max-vertical-offset="643">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.37013996" vertical-offset="0" max-vertical-offset="643">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +80,8 @@
         <option value="$PROJECT_DIR$/src/main/BuildDictionary.java" />
         <option value="$PROJECT_DIR$/src/main/Trie.java" />
         <option value="$PROJECT_DIR$/src/main/Boggle.java" />
-        <option value="$PROJECT_DIR$/src/main/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/Dictionary.java" />
       </list>
     </option>
   </component>
@@ -547,12 +547,12 @@
       <workItem from="1425423864855" duration="5249000" />
       <workItem from="1425483394468" duration="836000" />
       <workItem from="1425503739214" duration="4245000" />
-      <workItem from="1425531569180" duration="2263000" />
+      <workItem from="1425531569180" duration="2840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12593000" />
+    <option name="totallyTimeSpent" value="13170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2552" y="352" width="1936" height="1056" extended-state="6" />
@@ -750,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15863141" vertical-offset="0" max-vertical-offset="643">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.37013996" vertical-offset="0" max-vertical-offset="643">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

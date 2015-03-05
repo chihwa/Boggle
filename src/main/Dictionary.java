@@ -1,7 +1,6 @@
 package main;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -10,7 +9,7 @@ public class Dictionary {
     public Trie trie = new Trie();
 
     public void buildDic() throws IOException {
-       BufferedReader br = new BufferedReader(new FileReader(DICTIONARY));
+        BufferedReader br = new BufferedReader(new FileReader(DICTIONARY));
 
         String s;
         int wordNum = Integer.valueOf(br.readLine());
